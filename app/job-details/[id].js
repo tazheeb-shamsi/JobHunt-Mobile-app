@@ -18,7 +18,7 @@ import {
   Specifics,
 } from "../../components";
 import { COLORS, icons, SIZES } from "../../constants";
-import useFetch from "../../hooks/useFetch";
+import useFetch from "../../hook/useFetch";
 
 const tabs = ["About", "Qualifications", "Responsibilities"];
 
@@ -52,7 +52,7 @@ const JobDetails = () => {
 
       case "About":
         return (
-          <JobAbout info={data[0].job_description ?? "No Description provided"} />
+          <JobAbout info={data[0].job_description ?? "No data provided"} />
         );
 
       case "Responsibilities":
